@@ -1,4 +1,4 @@
 module.exports = {
   lintOnSave: false,
-  publicPath: './'
+  publicPath: '/' //change to '/media-hub/' for GitHub Pages deployment
 }

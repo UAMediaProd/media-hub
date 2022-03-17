@@ -20,6 +20,7 @@
 
 <script>
 // @ is an alias to /src
+import Swal from 'sweetalert2'
 
 export default {
   name: "Media",
@@ -38,6 +39,13 @@ export default {
   },
   methods: {
     download(){
+       Swal.fire({
+  title: 'Downloading',
+  text: "Your browser will begin downloading the file shortly",
+  icon: 'success',
+  confirmButtonColor: '#102535',
+  confirmButtonText: 'Okay'
+     });
       //axios request the resource
       axios.get("https://api.box.com/2.0/files/" + this.id + "/content", {
         headers: {
@@ -53,6 +61,7 @@ export default {
      document.body.appendChild(fileLink);
    
      fileLink.click();
+    
 });
     }
   }

@@ -47,6 +47,7 @@
   background-size: cover;
   background-position: 50%;
   border-radius: 8px;
+  background-color: rgb(228, 228, 228);
 }
 
 .grid-item:hover {
